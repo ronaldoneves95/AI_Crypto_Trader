@@ -1,0 +1,21 @@
+# Core Libraries
+pandas
+numpy
+PyYAML
+requests
+joblib
+scikit-learn
+xgboost
+ta
+
+# API e Conexão
+pybit
+
+# Servidor de Inferência e Painel
+Flask
+nicegui
+plotly
+
+# Utilitários
+cachetools
+filelock

@@ -1,0 +1,17 @@
+# Ambiente Virtual
+venv/
+__pycache__/
+
+# Arquivos de modelo e banco de dados
+*.pkl
+*.db
+*.db-journal
+
+# Logs e arquivos de status
+*.log
+*.lock
+*.flag
+
+# Resultados gerados (opcional)
+research_results_confluence/
+optimizer_results/

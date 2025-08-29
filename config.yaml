@@ -1,0 +1,64 @@
+# Configurações do Bot de Trading Bybit
+
+# Percentual de risco por trade (0.02 = 2% do equity)
+risk_perc: 0.02
+
+# Limiares de confiança para Machine Learning por par
+ml_thresholds:
+  BTCUSDT: 0.65  # 65% de confiança mínima para BTC
+  ETHUSDT: 0.60  # 60% de confiança mínima para ETH
+
+# Configurações de trading
+trading:
+  # Intervalo dos candles (1, 3, 5, 15, 30, 60, etc.)
+  interval: "5"
+
+  # Alavancagem máxima
+  leverage: 10
+
+  # Cooldown entre trades em minutos
+  cooldown_minutes: 0
+
+  # Usar testnet (true) ou conta real (false)
+  use_testnet: true
+
+# Configurações de risco
+risk_management:
+  # Meta de lucro diária (5%)
+  daily_profit_target: 0.05
+
+  # Stop loss diário (3%)
+  daily_stop_loss: 0.03
+
+  # Máximo percentual do equity por trade (8%)
+  max_notional_perc: 0.08
+
+  # Taxa de taker da Bybit
+  taker_fee: 0.00055
+
+# Configurações de Machine Learning
+ml_config:
+  # URL do servidor de ML
+  predict_url: "http://localhost:5000/predict"
+
+  # Timeout para requisições ML em segundos
+  timeout_seconds: 3.0
+
+  # Limiar mínimo de ADX para confirmar tendência
+  adx_threshold: 25
+
+  # Multiplicadores de ATR
+  atr_multiplier_sl: 1.8
+  atr_multiplier_tp: 5.0
+
+# Configurações de logging
+logging:
+  level: "INFO"
+
+# Pares de trading
+trading_pairs:
+  - "BTCUSDT"
+  - "ETHUSDT"
+
+# Estratégia ativa
+active_strategy: "strategy_ml"
