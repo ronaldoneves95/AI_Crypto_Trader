@@ -33,24 +33,21 @@ Uma interface web construída com NiceGUI que permite monitorar o status do bot.
 
 Exibe P&L (lucro e prejuízo), acompanha posições abertas e analisa o histórico de trades de forma intuitiva.
 
-Como Instalar e Executar o Projeto 🚀
-Siga este guia para colocar o sistema em funcionamento na sua máquina.
+Como Instalar e Executar o Projeto 
+
+🚀 Siga este guia para colocar o sistema em funcionamento na sua máquina.
 
 1. Pré-requisitos
-Python 3.8 ou superior.
+Python 3.10 ou superior.
 
 Uma conta na exchange Bybit (real ou testnet) com chaves de API.
 
 2. Instalação
 Clone o repositório:
 
-Bash
-
 git clone https://github.com/ronaldoneves95/AI_Crypto_Trader.git
 cd AI_Crypto_Trader
 Crie e ative um ambiente virtual:
-
-Bash
 
 python -m venv venv
 # No Windows
@@ -59,15 +56,11 @@ python -m venv venv
 source venv/bin/activate
 Instale as dependências:
 
-Bash
-
 pip install -r requirements.txt
 3. Configuração Essencial
 Dados Históricos:
 
-Crie uma pasta chamada data/ na raiz do projeto.
-
-Adicione seus arquivos de dados históricos em formato .csv dentro desta pasta (ex: dados_historicos_BTCUSDT_5m.csv). O modelo foi projetado para ser treinado com dados de candles de 5 minutos dos últimos 2 anos.
+Dados históricos em formato .csv dentro desta pasta (ex: dados_historicos_BTCUSDT_5m.csv). O modelo foi projetado para ser treinado com dados de candles de 5 minutos dos últimos 2 anos. ( Já tem os csv com dados historicos do BTC e Eth dos ultimos 2 anos ate dia 18 Ago 2025)
 
 Chaves de API:
 
@@ -98,6 +91,8 @@ Antes de iniciar o bot pela primeira vez, você precisa treinar o modelo com seu
 python model_trainer.py
 Isso irá ler os arquivos .csv da pasta data/ e criar os arquivos de modelo (.pkl) na raiz do projeto.
 
+### Não se esqueça de inserir sua API KEY DO BYBIT NO bot_bybit.py, no local destinado ###
+
 Inicie o Sistema Completo:
 
 O script bot_bybyit.py foi projetado para iniciar o servidor de inferência, o painel de controle e a lógica de trading.
@@ -106,7 +101,8 @@ O script bot_bybyit.py foi projetado para iniciar o servidor de inferência, o p
 python bot_bybit.py
 Acesse o Painel de Controle:
 
-Abra seu navegador e acesse http://localhost:8080 para monitorar o robô em tempo real.
+-Abra seu navegador e acesse http://localhost:8080;
+-Clique em Start que vai criar a flag para o bot começar a operar, e o bot vai começar a operar em tempo real, acompanhe tanto pelo navegador ou pelo console do editor de codigo.
 
 Autor
 Ronaldo Neves Barbosa Neto
