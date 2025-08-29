@@ -1,4 +1,5 @@
 AI Crypto Trader 🤖
+
 Este repositório contém o código-fonte de um ecossistema completo para trading algorítmico no mercado de criptomoedas, utilizando Machine Learning para prever movimentos de preço e executar operações de forma autônoma.
 
 O Que Temos Neste Projeto? (Features)
@@ -113,4 +114,4 @@ Abra seu navegador e acesse http://localhost:8080 para monitorar o robô em temp
 Autor
 Ronaldo Neves Barbosa Neto
 
-LinkedIn: https://www.linkedin.com/in/ronaldo-neves-barbosa-neto/
+LinkedIn: https://www.linkedin.com/in/ronaldo-neto-b5247222b
