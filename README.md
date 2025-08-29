@@ -75,13 +75,12 @@ Abra os arquivos bot_bybit.py e painel.py.
 
 Insira suas chaves de API da Bybit nos locais indicados:
 
-Python
 
 API_KEY = "SUA_API_KEY"
 API_SECRET = "SEU_API_SECRET"
 Arquivo de Configuração (config.yaml):
 
-Crie um arquivo chamado config.yaml na raiz do projeto para definir os parâmetros da estratégia. Você pode começar com este exemplo:
+Crie um arquivo chamado config.yaml (se não houver) na raiz do projeto para definir os parâmetros da estratégia. Você pode começar com este exemplo:
 
 YAML
 
@@ -95,7 +94,6 @@ Treine o Modelo de IA:
 
 Antes de iniciar o bot pela primeira vez, você precisa treinar o modelo com seus dados. Execute o seguinte comando no terminal:
 
-Bash
 
 python model_trainer.py
 Isso irá ler os arquivos .csv da pasta data/ e criar os arquivos de modelo (.pkl) na raiz do projeto.
@@ -104,7 +102,6 @@ Inicie o Sistema Completo:
 
 O script bot_bybyit.py foi projetado para iniciar o servidor de inferência, o painel de controle e a lógica de trading.
 
-Bash
 
 python bot_bybit.py
 Acesse o Painel de Controle:
