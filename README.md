@@ -57,6 +57,7 @@ source venv/bin/activate
 Instale as dependências:
 
 pip install -r requirements.txt
+
 3. Configuração Essencial
 Dados Históricos:
 
@@ -82,6 +83,8 @@ ml_thresholds:
   BTCUSDT: 0.65
   ETHUSDT: 0.65
 adx_threshold: 25
+
+
 4. Execução
 Treine o Modelo de IA:
 
